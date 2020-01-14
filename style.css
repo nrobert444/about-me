@@ -15,7 +15,7 @@ body {
 
 p {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #fa8f0e
+    color: #0efa98
 
 }
 
@@ -23,18 +23,49 @@ header {
     font-family: 'IM Fell Great Primer SC', serif;
     font-weight: bold;
     color: #7d2f4c;
-    
+}
 
+img {
+    border: solid 5px darkkhaki;
 }
 
 li {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #20363C
+    color: rgb(32, 32, 60)
     
 
 }
-.buttonDiv {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-radius: 5rem;
-    
+#myButton {
+        box-shadow:inset 0px 1px 0px 0px #cf866c;
+        background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+        background-color:#d0451b;
+        border-radius:3px;
+        border:1px solid #942911;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:13px;
+        padding:6px 24px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #854629;
 }
+#myButton:hover {
+        background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+        background-color:#bc3315;
+}
+#myButton:active {
+        position:relative;
+        top:1px;
+}
+#results {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: Bold;
+    color: darkblue;
+}
+#tryAgain {
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
+}
+    

@@ -1,12 +1,13 @@
-import isYes from './is-yes.js';
+import isYes from '../is-yes.js';
 
 
-//function getPercent(points) {
-    //return Math.floor((points/3) * 100);
-//}
+function getPercent(points) {
+    return Math.floor((points/3) * 100);
+}
 
-const grabButton = document.getElementById('quizbutton');
+const grabButton = document.getElementById('myButton');
 const getResults = document.getElementById('results');
+const lowScoreResult = document.getElementById('tryAgain');
 
 grabButton.addEventListener('click', () => {
     const name = prompt('what is your name?');
@@ -18,6 +19,12 @@ grabButton.addEventListener('click', () => {
     let points= 0;
     if (isYes(answerOne)) points += 1;
     if (isYes(answerTwo)) points += 1;
-    if (isYes(answerThree)) points += 1;
-    getResults.textContent =`${name}, you got ${points} answers correct!`;
+    if (!isYes(answerThree)) points += 1;
+    let PercentIs = getPercent(points);
+    console.log(points)
+    if (points === 3) {
+        return getResults.textContent =`${name}, you got ${PercentIs}% out of 100!`;
+    } else {
+        return lowScoreResult.textContent = `Sorry ${name}, You got ${PercentIs}% out of 100.`;
+    }
 });
