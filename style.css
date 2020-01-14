@@ -1,0 +1,22 @@
+body {
+    background-color: #A06137;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FA8F0E
+
+}
+
+header {
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-weight: bold;
+    color: #7d2f4c;
+
+}
+
+li {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #20363C
+
+}

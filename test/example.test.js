@@ -3,14 +3,15 @@
 
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
+test('check to see if isYes function accepts and evaluates inputs correctly ', function(assert) {
     //Arrange
     // Set up your parameters and expectations
+    const isTrue = isYes('yes');
 
     //Act 
     // Call the function you're testing and set the result to a const
 
     //Assert
     // Make assertions about what is expected valid result
-    assert.equal(true, false);
+    assert.equal(isTrue, true);
 });
