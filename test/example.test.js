@@ -55,10 +55,10 @@ test('check to see if isYes function takes alternate yes input', function(assert
 test('check to see if isYes function takes alternate yes input', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const isOtherYes = 'y';
+    const isAltYes = 'yeah';
     const expected = true;
 
-    const result = isYes(isOtherYes);
+    const result = isYes(isAltYes);
 
     //Act 
     // Call the function you're testing and set the result to a const
