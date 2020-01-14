@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+}
+
+
 body {
     background-color: #A06137;
 }
@@ -19,5 +30,11 @@ header {
 li {
     font-family: 'Roboto Condensed', sans-serif;
     color: #20363C
+    
 
+}
+.buttonDiv {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5rem;
+    
 }

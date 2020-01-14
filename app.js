@@ -16,8 +16,8 @@ grabButton.addEventListener('click', () => {
     const answerTwo = prompt('Do I enjoy skydiving?');
     const answerThree = prompt('Did I ever live in Hawaii?');
     let points= 0;
-    if (isYes(answerOne)) points ++;
-    if (isYes(answerTwo)) points ++;
-    if (isYes(answerThree)) points ++;
+    if (isYes(answerOne)) points += 1;
+    if (isYes(answerTwo)) points += 1;
+    if (isYes(answerThree)) points += 1;
     getResults.textContent =`${name}, you got ${points} answers correct!`;
 });
